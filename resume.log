@@ -1,160 +1,72 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.3)  3 FEB 2025 20:08
-entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**./resume.tex
-(resume.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
-)
-\c@part=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
-\c@figure=\count193
-\c@table=\count194
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+% Page formatting
+\geometry{margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-\Gm@cnth=\count195
-\Gm@cntv=\count196
-\c@Gm@tempcnt=\count197
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks18
+% Colors
+\definecolor{darkblue}{RGB}{0, 50, 150}
+\definecolor{graytext}{RGB}{100, 100, 100}
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}
+\titleformat{\subsection}{\bfseries\color{graytext}}{}{0em}{}
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+\begin{document}
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 107.
+% Header
+\begin{center}
+    {\LARGE \textbf{John Gleiter}} \\
+    \color{graytext} Houston, Texas • \href{mailto:johnpaul12356789@gmail.com}{johnpaul12356789@gmail.com} • 815-994-8281 \\
+    \href{https://github.com/johnpaul123Z}{GitHub: github.com/johnpaul123Z} • \href{https://linkedin.com}{LinkedIn}
+\end{center}
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
-Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box51
-\beforetitleunit=\skip50
-\aftertitleunit=\skip51
-\ttl@plus=\dimen151
-\ttl@minus=\dimen152
-\ttl@toksa=\toks19
-\titlewidth=\dimen153
-\titlewidthlast=\dimen154
-\titlewidthfirst=\dimen155
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
-Package: enumitem 2025/01/19 v3.10 Customized lists
-\labelindent=\skip52
-\enit@outerparindent=\dimen156
-\enit@toks=\toks20
-\enit@inbox=\box52
-\enit@count@id=\count198
-\enitdp@description=\count199
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
+\hrule
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+% Professional Summary
+\section*{Professional Summary}
+Dynamic and detail-oriented Computer Science student with a solid foundation in programming and problem solving. Proven ability to work under pressure, honed through hands-on experience in commercial operations and team environments. Eager to leverage technical skills in C++, Python, and MySQL, alongside intermediate expertise in web development, to contribute effectively to innovative projects.
 
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-))
-(C:\Users\johnp\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
+% Education
+\section*{Education}
+\textbf{Rockvalley Communnity College}  \\
+A.S.\\
+Graduated spring 2020 
 
-! LaTeX Error: File `letltxmacro.sty' not found.
+\textbf{University of Houston}  \\
+B.A Computer Science \\
+Expected graduation date: Fall 2025
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+% Experience
+\section*{Experience}
+\textbf{Deckhand (2 Seasons)} \\
+\textit{Main Bay Corporation, May 2021 – Aug 2023, Alaska}  \\
+Contributed to commercial gillnet fishing operations, focusing on sockeye salmon.
 
-Enter file name: ^^V
-! Missing endcsname inserted.
-<to be read again> 
-                   MessageBreak 
-l.115 \RequirePackage{letltxmacro}[2008/06/13]
-                                              
-? 
-! Argument of __file_name_expand_cleanup:Nw has an extra }.
-<inserted text> 
-                par 
-l.115 \RequirePackage{letltxmacro}[2008/06/13]
-                                              
-? x
- 
-Here is how much of TeX's memory you used:
- 2369 strings out of 474486
- 38249 string characters out of 5743756
- 1924542 words of memory out of 5000000
- 24673 multiletter control sequences out of 15000+600000
- 558069 words of font info for 36 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 61i,0n,65p,206b,36s stack positions out of 10000i,1000n,20000p,200000b,200000s
-No pages of output.
-PDF statistics:
- 0 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+% Skills
+\section*{Skills}
+\textbf{Programming Languages:} C++, Python, MySQL (Experienced); HTML, CSS, PHP (Intermediate); Java, JavaScript (Familiar)  \\
+\textbf{Tools:} React, GitHub, VS Code  \\
+\textbf{Problem Solving}
+
+% Achievements
+\section*{Achievements}
+Awarded Transfer Excellent Scholarship
+
+% Projects
+\section*{Projects}
+\textbf{Website Resume}  \\
+\href{https://johnpaul123Z.github.io}{https://johnpaul123Z.github.io}
+
+\end{document}
+
 
